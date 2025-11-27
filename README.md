@@ -134,6 +134,7 @@ Detalhes dos Scripts:
 npm run dev: Compila Sass em modo watch (--watch) com CSS expandido
 npm run build: Compila Sass com CSS comprimido para produção
 npm run build:dev: Compila Sass com CSS expandido para desenvolvimento
+```
 🎯 Funcionalidades
 ✅ Implementadas
  Layout responsivo com CSS Grid/Flexbox
