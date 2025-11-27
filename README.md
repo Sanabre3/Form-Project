@@ -2,7 +2,6 @@
 
 Um sistema de login moderno e responsivo desenvolvido com **HTML5**, **Sass** e **JavaScript**, seguindo as melhores práticas de desenvolvimento frontend.
 
-<!-- Seção de badges no topo -->
 <div align="center">
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
@@ -44,17 +43,22 @@ Um sistema de login moderno e responsivo desenvolvido com **HTML5**, **Sass** e 
 ## 🛠️ Instalação
 
 1. **Clone o repositório**
-```bash```
+
+```bash
 git clone https://github.com/seu-usuario/sass-login-project.git
 cd sass-login-project
-Instale as dependências
+Instale as dependências```
+```bash
+Copiar
+
+npm install
+Execute em modo desenvolvimento
 bash
 Copiar
 
-## 📁 Estrutura do Projeto
-
-
-```
+npm run dev
+Abra o arquivo index.html no navegador
+📁 Estrutura do Projeto
 sass-login-project/
 ├─ dist/                        # Arquivos compilados
 │  └─ css/
@@ -86,40 +90,37 @@ sass-login-project/
 ├─ package-lock.json           # Lock das dependências
 ├─ package.json                # Configurações do projeto
 └─ README.md                   # Documentação
-```
+🎨 Arquitetura Sass (7-1)
+O projeto utiliza a arquitetura 7-1 para organização do Sass:
 
-
-## 🎨 Arquitetura Sass (7-1)
-
-O projeto utiliza a **arquitetura 7-1** para organização do Sass:
-
-### 📂 **abstracts/**
+📂 abstracts/
 Contém variáveis, mixins e funções que não geram CSS por si só:
-- `_variables.scss` - Cores, tipografia, espaçamentos
-- `_mixins.scss` - Mixins reutilizáveis
 
-### 📂 **base/**
+_variables.scss - Cores, tipografia, espaçamentos
+_mixins.scss - Mixins reutilizáveis
+📂 base/
 Estilos fundamentais e reset:
-- `_reset.scss` - Reset CSS e estilos base
-- `_typography.scss` - Estilos de tipografia
 
-### 📂 **components/**
+_reset.scss - Reset CSS e estilos base
+_typography.scss - Estilos de tipografia
+📂 components/
 Componentes reutilizáveis:
-- `_buttons.scss` - Estilos de botões
-- `_cards.scss` - Estilos de cards
-- `_forms.scss` - Formulários e inputs
 
-### 📂 **layout/**
+_buttons.scss - Estilos de botões
+_cards.scss - Estilos de cards
+_forms.scss - Formulários e inputs
+📂 layout/
 Estrutura e layout:
-- `_grid.scss` - Sistema de grid e containers
 
-### 📂 **pages/**
+_grid.scss - Sistema de grid e containers
+📂 pages/
 Estilos específicos de páginas:
-- `_login.scss` - Página de login
 
-## 📜 Scripts Disponíveis
+_login.scss - Página de login
+📜 Scripts Disponíveis
+bash
+Copiar
 
-```bash
 # Desenvolvimento (watch mode) - Monitora mudanças
 npm run dev
 
@@ -215,5 +216,44 @@ Otimizações Implementadas:
 ✅ Imagens Otimizadas: SVG para ícones
 ✅ Fonts Otimizadas: Google Fonts com display=swap
 ✅ CSS Modular: Carregamento eficiente
-📝 Licença
+🧪 Como Testar
+Teste de Responsividade:
+
+Redimensione a janela do navegador
+Teste em diferentes dispositivos
+Teste de Validação:
+
+Tente enviar formulário vazio
+Digite email inválido
+Digite senha com menos de 6 caracteres
+Teste de Funcionalidades:
+
+Marque/desmarque "Lembrar de mim"
+Recarregue a página para verificar persistência
+🤝 Como Contribuir
+Fork o projeto
+Crie uma branch para sua feature:
+bash
+Copiar
+
+git checkout -b feature/NovaFuncionalidade
+Commit suas mudanças:
+bash
+Copiar
+
+git commit -m 'feat: Adiciona nova funcionalidade'
+Push para a branch:
+bash
+Copiar
+
+git push origin feature/NovaFuncionalidade
+Abra um Pull Request
+Padrões de Commit:
+feat: - Nova funcionalidade
+fix: - Correção de bug
+docs: - Documentação
+style: - Formatação
+refactor: - Refatoração
+test: - Testes
+�� Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
