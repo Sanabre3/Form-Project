@@ -177,47 +177,21 @@ $font-size-base: 16px;
 $font-size-lg: 18px;
 $font-size-xl: 24px;
 ```
-📏 Espaçamentos
-scss
-Copiar
+### 📏 **Espaçamentos**
 
+```scss
 // Sistema de espaçamento
 $spacing-xs: 8px;              // Extra pequeno
 $spacing-sm: 12px;             // Pequeno
 $spacing-md: 16px;             // Médio
 $spacing-lg: 24px;             // Grande
 $spacing-xl: 32px;             // Extra grande
-📱 Breakpoints
-scss
-Copiar
+```
 
+### 📱 **Breakpoints**
+
+```scss
 // Pontos de quebra responsivos
 $bp-sm: 576px;                 // Small devices
 $bp-md: 768px;                 // Medium devices
-📱 Responsividade
-O sistema é totalmente responsivo com os seguintes breakpoints:
-
-Dispositivo	Largura	Comportamento
-Mobile	< 576px	Layout em coluna única
-Tablet	576px - 768px	Layout adaptativo
-Desktop	> 768px	Layout em duas colunas
-Características Responsivas:
-✅ Imagem oculta em dispositivos móveis
-✅ Formulário centralizado em todas as telas
-✅ Botões e inputs adaptáveis
-✅ Espaçamentos proporcionais
-🔧 Tecnologias Utilizadas
-Tecnologia	Versão	Propósito
-HTML5	-	Estrutura semântica
-Sass/SCSS	^1.69.0	Pré-processador CSS
-JavaScript ES6+	-	Interatividade e validação
-CSS Grid	-	Layout principal
-Flexbox	-	Alinhamento de componentes
-Google Fonts	-	Tipografia (Inter)
-�� Performance
-Otimizações Implementadas:
-✅ CSS Minificado: Build de produção comprimido
-✅ Source Maps: Debug facilitado em desenvolvimento
-✅ Imagens Otimizadas: SVG para ícones
-✅ Fonts Otimizadas: Google Fonts com display=swap
-✅ CSS Modular: Carregamento eficiente
+```
