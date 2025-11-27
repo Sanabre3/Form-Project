@@ -91,37 +91,37 @@ sass-login-project/
 ├─ package.json                # Configurações do projeto
 └─ README.md                   # Documentação
 ```
-🎨 Arquitetura Sass (7-1)
-O projeto utiliza a arquitetura 7-1 para organização do Sass:
+## 🎨 Arquitetura Sass (7-1)
 
-📂 abstracts/
+O projeto utiliza a **arquitetura 7-1** para organização do Sass:
+
+### 📂 **abstracts/**
 Contém variáveis, mixins e funções que não geram CSS por si só:
+- `_variables.scss` - Cores, tipografia, espaçamentos
+- `_mixins.scss` - Mixins reutilizáveis
 
-_variables.scss - Cores, tipografia, espaçamentos
-_mixins.scss - Mixins reutilizáveis
-📂 base/
+### 📂 **base/**
 Estilos fundamentais e reset:
+- `_reset.scss` - Reset CSS e estilos base
+- `_typography.scss` - Estilos de tipografia
 
-_reset.scss - Reset CSS e estilos base
-_typography.scss - Estilos de tipografia
-📂 components/
+### 📂 **components/**
 Componentes reutilizáveis:
+- `_buttons.scss` - Estilos de botões
+- `_cards.scss` - Estilos de cards
+- `_forms.scss` - Formulários e inputs
 
-_buttons.scss - Estilos de botões
-_cards.scss - Estilos de cards
-_forms.scss - Formulários e inputs
-📂 layout/
+### 📂 **layout/**
 Estrutura e layout:
+- `_grid.scss` - Sistema de grid e containers
 
-_grid.scss - Sistema de grid e containers
-📂 pages/
+### 📂 **pages/**
 Estilos específicos de páginas:
+- `_login.scss` - Página de login
 
-_login.scss - Página de login
-📜 Scripts Disponíveis
-bash
-Copiar
+## 📜 Scripts Disponíveis
 
+```bash
 # Desenvolvimento (watch mode) - Monitora mudanças
 npm run dev
 
@@ -217,44 +217,3 @@ Otimizações Implementadas:
 ✅ Imagens Otimizadas: SVG para ícones
 ✅ Fonts Otimizadas: Google Fonts com display=swap
 ✅ CSS Modular: Carregamento eficiente
-🧪 Como Testar
-Teste de Responsividade:
-
-Redimensione a janela do navegador
-Teste em diferentes dispositivos
-Teste de Validação:
-
-Tente enviar formulário vazio
-Digite email inválido
-Digite senha com menos de 6 caracteres
-Teste de Funcionalidades:
-
-Marque/desmarque "Lembrar de mim"
-Recarregue a página para verificar persistência
-🤝 Como Contribuir
-Fork o projeto
-Crie uma branch para sua feature:
-bash
-Copiar
-
-git checkout -b feature/NovaFuncionalidade
-Commit suas mudanças:
-bash
-Copiar
-
-git commit -m 'feat: Adiciona nova funcionalidade'
-Push para a branch:
-bash
-Copiar
-
-git push origin feature/NovaFuncionalidade
-Abra um Pull Request
-Padrões de Commit:
-feat: - Nova funcionalidade
-fix: - Correção de bug
-docs: - Documentação
-style: - Formatação
-refactor: - Refatoração
-test: - Testes
-�� Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
